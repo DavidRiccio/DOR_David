@@ -1,0 +1,30 @@
+
+
+.titulo{
+    background-color: grey;
+    color: white;
+    padding: 1px;
+    font-size: 2rem;
+    text-align: center;
+}
+.body{
+    background-color: white;
+    color: black;
+    font-style: italic;
+    text-align: justify;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+.foot{
+    background-color: lightgrey;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+body {
+    box-shadow: 4px 0px 4px 4px lightgrey ;
+    width: 300px;
+}

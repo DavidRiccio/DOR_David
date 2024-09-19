@@ -1,0 +1,25 @@
+div {
+    width:200px;
+    height: 200px;
+}
+
+.div1{
+    background-color: #CC99FF;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.div2{
+    background-color:  #FFCCFF ;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.div3{
+    background-color: #FF99CC;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}

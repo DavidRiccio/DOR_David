@@ -1,0 +1,28 @@
+table{
+    background-color: white;
+    color: blue;
+    padding: 8px 4px ;
+    border-collapse: collapse;
+    font-style: arial;
+}
+.title{
+    font-style: arial;
+    color: black;
+}
+table th{
+    width: 170px;
+    color: black;
+}
+
+table tr td {
+    border: 1px solid black;
+    padding: 4px;;
+}
+.destacado{
+    background-color: red;
+    color: white;
+}
+.foot{
+    column-span: all;
+    text-align: center;
+}
