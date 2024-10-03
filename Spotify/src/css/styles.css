@@ -1,15 +1,20 @@
 .flex{
-    width: 200px;
-    height: 200px;
-    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    margin-top: 20px;
 }
 .cover{
     width: 200px;
     height: 200px;
-    background-color: rgb( 253, 237, 236 );
-    position: relative;
-    margin:auto;
-}
+    background-color: aliceblue;
+    border-radius: 10%;
+    z-index: 1;
+
+ }
+ 
 .cover-1{
     background-image: url(../assets/img/cover1.jpg);
     background-size:cover ;
@@ -23,3 +28,57 @@
     background-image: url(../assets/img/cover3.webp);
     background-size:cover ;
 }
+
+.vinyl{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 0;
+    transform: translate(-200px); 
+
+}
+.detail{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.detail1{
+    background-image: url(/assets/img/cover1.jpg);
+    background-size: cover;
+}   
+
+.detail2{
+    background-image: url(/assets/img/cover2.webp);
+    background-size: cover;
+}
+.detail3{
+    background-image: url(/assets/img/cover3.webp);
+    background-size: cover;
+}
+.hole{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+
+}
+
+.open{
+    transition: 1.5s;
+    transform: translate(100px);
+   }
+
+.close{
+        transition: 1.5s;
+        transform: translate(-200px);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(30deg); }
+    50% { transform: rotate(120deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
