@@ -1,0 +1,25 @@
+.flex{
+    width: 200px;
+    height: 200px;
+    margin: 25px auto;
+}
+.cover{
+    width: 200px;
+    height: 200px;
+    background-color: rgb( 253, 237, 236 );
+    position: relative;
+    margin:auto;
+}
+.cover-1{
+    background-image: url(../assets/img/cover1.jpg);
+    background-size:cover ;
+}
+.cover-2{
+    background-image: url(../assets/img/cover2.webp);
+    background-size:cover ;
+}
+
+.cover-3{
+    background-image: url(../assets/img/cover3.webp);
+    background-size:cover ;
+}
