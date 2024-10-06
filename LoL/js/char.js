@@ -1,6 +1,9 @@
-export default class Champion {
-    constructor(data){
-        this.name = data.data.id 
-    }
 
-}
+class Champion {
+    constructor(name, blurb) {
+      this.name = name;
+      this.blurb = blurb;
+    }
+  }
+  export default Champion;
+  
