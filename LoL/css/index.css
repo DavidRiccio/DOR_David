@@ -7,11 +7,13 @@ body {
 #logo {
     max-width: 300px;
     height: auto;
-    margin: 0 auto 5px auto; 
+    margin: 0 auto auto auto; 
     display: block;
+    padding: 0px;
 }
 .nombre{
     text-align: center;
+    padding: 0px;
 }
 #champion-container {
     display: flex;
@@ -19,13 +21,19 @@ body {
     justify-content: space-around; 
 }
 .champion {
-    border: 1px solid #ddd;
-    padding: 10px;
+    border: 0.4px;
+    padding: 0px;
     margin: 10px;
     border-radius: 5px;
     background-image: linear-gradient(#d2b4de,#e8daef);
-    width: 200px; 
+    width: 300px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+}
+
+img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */ 
 }
 
 .champion:hover {
@@ -34,8 +42,24 @@ body {
     background-color: #eaeaea;
 }
 details {
-    padding: 5px 0;
+    max-height: 500px; /* Altura máxima del blurb */
+    transition: max-height 0.3s ease; /* Transición suave para abrir/cerrar */
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
 }
+
+.tipos{
+    text-align: center;
+}
+
 summary {
     cursor: pointer;
-    outline: none;}
+    outline: none;
+    font-weight: bold;
+}
+
+details p {
+    margin: 0; /* Quitar el margen del párrafo dentro del details */
+    padding: 5px 0; /* Añadir un poco de espaciado */
+}

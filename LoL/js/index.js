@@ -9,7 +9,7 @@ fetch(url)
     const container = document.getElementById('champion-container');
 
     container.innerHTML = '';
-    
+
     for (let champ in champions) {
       const name = champions[champ].name;
       const blurb = champions[champ].blurb;
@@ -21,8 +21,8 @@ fetch(url)
       championDiv.classList.add('champion');
 
       const nameElement = document.createElement('h2');
-      nameElement.classList.add('nombre')
       nameElement.textContent = name;
+      nameElement.classList.add('nombre')
 
       const imageElement = document.createElement('img');
       imageElement.src = championImageUrl;
@@ -31,6 +31,7 @@ fetch(url)
 
       const tagsElement = document.createElement('p');
       tagsElement.textContent = `Tipos: ${tags.join(', ')}`;
+      tagsElement.classList.add('tipos')
 
       const detailsElement = document.createElement('details');
       const summaryElement = document.createElement('summary');
@@ -38,6 +39,7 @@ fetch(url)
 
       const blurbElement = document.createElement('p');
       blurbElement.textContent = blurb;
+      blurbElement.style.maxHeight = 'none'; // Asegura que no haya límite de altura
 
       detailsElement.appendChild(summaryElement);
       detailsElement.appendChild(blurbElement);
