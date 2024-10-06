@@ -11,6 +11,14 @@ body {
     display: block;
     padding: 0px;
 }
+
+.subtitle{
+    text-align: center;
+    padding: 0px;
+    color:white ;
+
+}
+
 .nombre{
     text-align: center;
     padding: 0px;
@@ -27,23 +35,23 @@ body {
     border-radius: 5px;
     background-image: linear-gradient(#d2b4de,#e8daef);
     width: 300px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 4px rgb(255, 255, 255); 
     cursor: pointer;
 }
 
 img {
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-    height: auto; /* Mantener la proporción de la imagen */ 
+    width: 100%; 
+    height: auto;  
 }
 
 .champion:hover {
     transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 2px 4px rgb(255, 255, 255); 
     background-color: #eaeaea;
 }
 details {
-    max-height: 500px; /* Altura máxima del blurb */
-    transition: max-height 0.3s ease; /* Transición suave para abrir/cerrar */
+    max-height: 500px; 
+    transition: max-height 0.3s ease; 
     text-align: center;
     padding: 15px;
     margin-top: 10px;
@@ -60,6 +68,6 @@ summary {
 }
 
 details p {
-    margin: 0; /* Quitar el margen del párrafo dentro del details */
-    padding: 5px 0; /* Añadir un poco de espaciado */
+    margin: 0; 
+    padding: 5px 0; 
 }

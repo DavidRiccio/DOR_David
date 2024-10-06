@@ -1,7 +1,6 @@
 import Champion from './char.js';
 
 const url = "https://ddragon.leagueoflegends.com/cdn/13.18.1/data/es_ES/champion.json";
-
 fetch(url)
   .then(response => response.json())
   .then(data => {
@@ -39,7 +38,7 @@ fetch(url)
 
       const blurbElement = document.createElement('p');
       blurbElement.textContent = blurb;
-      blurbElement.style.maxHeight = 'none'; // Asegura que no haya límite de altura
+      blurbElement.style.maxHeight = 'none'; 
 
       detailsElement.appendChild(summaryElement);
       detailsElement.appendChild(blurbElement);
