@@ -6,50 +6,24 @@ fetch(url)
   .then(data => {
     const champions = data.data;
     const container = document.getElementById('champion-container');
-
-    container.innerHTML = '';
-
     for (let champ in champions) {
-      const name = champions[champ].name;
+     const champion = new Champion(champions[champ])
+      /* const name = champions[champ].name;
       const blurb = champions[champ].blurb;
       const tags = champions[champ].tags;
+      const ids = champions[champ].id; */
 
-      const championImageUrl = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${name}_0.jpg`;
+      const championImageUrl = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`;
 
-      const championDiv = document.createElement('div');
-      championDiv.classList.add('champion');
+      const allChamps = document.getElementById('champion-container')
 
-      const nameElement = document.createElement('h2');
-      nameElement.textContent = name;
-      nameElement.classList.add('nombre')
-
-      const imageElement = document.createElement('img');
-      imageElement.src = championImageUrl;
-      imageElement.alt = name;
-      imageElement.style.width = '100%';
-
-      const tagsElement = document.createElement('p');
-      tagsElement.textContent = `Tipos: ${tags.join(', ')}`;
-      tagsElement.classList.add('tipos')
-
-      const detailsElement = document.createElement('details');
-      const summaryElement = document.createElement('summary');
-      summaryElement.textContent = "Más información";
-
-      const blurbElement = document.createElement('p');
-      blurbElement.textContent = blurb;
-      blurbElement.style.maxHeight = 'none'; 
-
-      detailsElement.appendChild(summaryElement);
-      detailsElement.appendChild(blurbElement);
-
-      championDiv.appendChild(imageElement);
-      championDiv.appendChild(nameElement);
-      championDiv.appendChild(tagsElement);
-      championDiv.appendChild(detailsElement);
-      container.appendChild(championDiv);
-    }
-  })
-  .catch(error => {
-    console.error("Error al obtener el JSON: ", error);
+      allChamps.innerHTML+=`<div class="champion">
+      <img src="${championImageUrl}"
+      <h2 class="nombre"> Nombre: ${champion.name}</h2>
+      <p class="tipos">Tipos: ${champion.tags.join(', ')}</p>
+      <details>
+      <sumamry>${champion.blurb}</summary></details>
+      </div>`
+  
+  }
   });

@@ -1,0 +1,19 @@
+18
+55/home/david/Escritorio/2DAW/DOR_David/LoL/css/index.css1728328570924150952 0
+65/home/david/Escritorio/2DAW/DOR_David/LoL/dist/index.e9a92ad8.css1728309458211571589 0
+45/home/david/Escritorio/2DAW/DOR_David/LoL/css1728307618738728839 1
+57/home/david/Escritorio/2DAW/DOR_David/LoL/dist/index.html1728309458267572550 0
+52/home/david/Escritorio/2DAW/DOR_David/LoL/assets/img1728307618737729329 1
+69/home/david/Escritorio/2DAW/DOR_David/LoL/dist/index.e9a92ad8.css.map1728309458215571657 0
+46/home/david/Escritorio/2DAW/DOR_David/LoL/dist1728315708584265610 1
+52/home/david/Escritorio/2DAW/DOR_David/LoL/js/char.js1728328414323739254 0
+41/home/david/Escritorio/2DAW/DOR_David/LoL1728307641436490226 1
+53/home/david/Escritorio/2DAW/DOR_David/LoL/js/index.js1728328611249842088 0
+44/home/david/Escritorio/2DAW/DOR_David/LoL/js1728307618738728839 1
+52/home/david/Escritorio/2DAW/DOR_David/LoL/.gitignore1728307618737729329 0
+62/home/david/Escritorio/2DAW/DOR_David/LoL/assets/img/logo.webp1728307618738728839 0
+48/home/david/Escritorio/2DAW/DOR_David/LoL/assets1727965401760723626 1
+52/home/david/Escritorio/2DAW/DOR_David/LoL/index.html1728307618738728839 0
+65/home/david/Escritorio/2DAW/DOR_David/LoL/dist/logo.403eff38.webp1728309458209571554 0
+68/home/david/Escritorio/2DAW/DOR_David/LoL/dist/index.5d9dacde.js.map1728315708584265610 0
+64/home/david/Escritorio/2DAW/DOR_David/LoL/dist/index.5d9dacde.js1728315708582265604 0

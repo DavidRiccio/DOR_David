@@ -32,6 +32,7 @@ body {
     border: 0.4px;
     padding: 0px;
     margin: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
     background-image: linear-gradient(#d2b4de,#e8daef);
     width: 300px; 
@@ -46,7 +47,7 @@ img {
 
 .champion:hover {
     transform: scale(1.05); 
-    box-shadow: 0 2px 4px rgb(255, 255, 255); 
+    box-shadow: 5px 0px 10px 5px rgba(255, 255, 255, 0.747); 
     background-color: #eaeaea;
 }
 details {
