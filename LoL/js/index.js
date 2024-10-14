@@ -1,29 +1,44 @@
 import Champion from './char.js';
 
-const url = "https://ddragon.leagueoflegends.com/cdn/13.18.1/data/es_ES/champion.json";
-fetch(url)
-  .then(response => response.json())
-  .then(data => {
-    const champions = data.data;
-    const container = document.getElementById('champion-container');
-    for (let champ in champions) {
-     const champion = new Champion(champions[champ])
-      /* const name = champions[champ].name;
-      const blurb = champions[champ].blurb;
-      const tags = champions[champ].tags;
-      const ids = champions[champ].id; */
+document.getElementById('load-champions').addEventListener('click', () => {
+  const url = "https://ddragon.leagueoflegends.com/cdn/13.18.1/data/es_ES/champion.json";
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      const champions = data.data;
+      const container = document.getElementById('champion-container');
+      container.innerHTML = '';  // Limpiar cualquier contenido previo
+      for (let champ in champions) {
+        const champion = new Champion(champions[champ]);
+        const championImageUrl = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`;
 
-      const championImageUrl = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`;
+        // Estructura HTML con frente y reverso sin "Ver más"
+        const cardHTML = `
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-image">
+                <img src="${championImageUrl}" alt="${champion.name}">
+              </div>
+              <h3>${champion.name}</h3>
+            </div>
+            <div class="card-back">
+              <h3>${champion.name}</h3>
+              <p>Tipos: ${champion.tags.join(', ')}</p>
+              <p>${champion.blurb.substring(0, 150)}...</p>
+            </div>
+          </div>
+        </div>`;
 
-      const allChamps = document.getElementById('champion-container')
+        container.innerHTML += cardHTML;
+      }
 
-      allChamps.innerHTML+=`<div class="champion">
-      <img src="${championImageUrl}"
-      <h2 class="nombre"> Nombre: ${champion.name}</h2>
-      <p class="tipos">Tipos: ${champion.tags.join(', ')}</p>
-      <details>
-      <sumamry>${champion.blurb}</summary></details>
-      </div>`
-  
-  }
-  });
+      // Seleccionar todas las tarjetas y añadirles el evento click para hacer flip
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          card.querySelector('.card-inner').classList.toggle('is-flipped'); // Hacer flip
+        });
+      });
+    });
+});
