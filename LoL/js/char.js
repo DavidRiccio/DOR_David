@@ -6,6 +6,7 @@ class Champion {
       this.image = `http://ddragon.leagueoflegends.com/cdn/13.18.1/img/champion/${this.id}`;
       this.tags = data.tags;
       this.info = data.info;  // Información adicional del campeón
+      this.title = data.title
     }
   }
 export default Champion;

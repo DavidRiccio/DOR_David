@@ -17,13 +17,17 @@
     margin-bottom: 40px;
     color: #e1b12c;
   }
+
+  .tipos{
+    background-color: #f39c12;
+    border-radius:5px ;
+  }
   
   #logo {
     display: block;
     margin: 0 auto;
     max-width: 200px;
   }
-  
   #load-champions {
     padding: 10px 20px;
     background-color: #f39c12;
@@ -102,47 +106,17 @@
   }
   
   .card h3 {
-    margin-top: 10px; /* Separación mínima para que el nombre esté justo debajo */
+    margin-top: 66px;/* Separación mínima para que el nombre esté justo debajo */
     font-size: 1.5rem;
-    color: #f5f6fa;
+    color: #ffffff;
     text-align: center;
   }
   
   .card-back p {
     padding: 15px;
     font-size: 1rem;
-    color: #bdc3c7;
-  }
-  
-  details {
-    margin: 10px;
-    background-color: #444;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  details[open] summary::after {
-    content: " ▲";
-  }
-  
-  summary::after {
-    content: " ▼";
-    font-weight: bold;
-  }
-  
-  summary {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #f39c12;
-    cursor: pointer;
-  }
-  
-  details p {
-    margin-top: 10px;
-    color: #ecf0f1;
-  }
-  
+    color: #fdfeff;
+  }  
   /* Animación de Fade-in */
   @keyframes fadeIn {
     from {
