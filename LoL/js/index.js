@@ -7,12 +7,11 @@ document.getElementById('load-champions').addEventListener('click', () => {
     .then(data => {
       const champions = data.data;
       const container = document.getElementById('champion-container');
-      container.innerHTML = '';  // Limpiar cualquier contenido previo
+      container.innerHTML = ''; 
       for (let champ in champions) {
         const champion = new Champion(champions[champ]);
         const championImageUrl = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`;
 
-        // Estructura HTML con frente y reverso sin "Ver más"
         const cardHTML = `
         <div class="card">
           <div class="card-inner">
@@ -36,11 +35,10 @@ document.getElementById('load-champions').addEventListener('click', () => {
         container.innerHTML += cardHTML;
       }
 
-      // Seleccionar todas las tarjetas y añadirles el evento click para hacer flip
       const cards = document.querySelectorAll('.card');
       cards.forEach(card => {
         card.addEventListener('click', () => {
-          card.querySelector('.card-inner').classList.toggle('is-flipped'); // Hacer flip
+          card.querySelector('.card-inner').classList.toggle('is-flipped');
         });
       });
     });
