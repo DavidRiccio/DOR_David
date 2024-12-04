@@ -1,4 +1,4 @@
-# Mejora de Accesibilidad en Código```HTML
+# Mejora la Accesibilidad del código HTML
 
 Este documento contiene modificaciones a diferentes bloques de código para cumplir con los estándares de accesibilidad establecidos por **WCAG** y **WAI-ARIA**. A continuación, se explica cómo se mejoraron los ejemplos originales, indicando los cambios realizados y su propósito.
 
